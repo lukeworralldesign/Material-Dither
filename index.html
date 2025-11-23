@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>Material Dither</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--surface);
+        color: var(--on-surface);
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+      .font-mono {
+        font-family: 'Space Mono', monospace;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      
+      /* Default Theme (Dark Neutral) - Will be overridden by JS */
+      :root {
+        --primary: #D0BCFF;
+        --on-primary: #381E72;
+        --primary-container: #4F378B;
+        --on-primary-container: #EADDFF;
+        --secondary: #CCC2DC;
+        --on-secondary: #332D41;
+        --secondary-container: #4A4458;
+        --on-secondary-container: #E8DEF8;
+        --tertiary: #EFB8C8;
+        --on-tertiary: #492532;
+        --tertiary-container: #633B48;
+        --on-tertiary-container: #FFD8E4;
+        --surface: #141218;
+        --on-surface: #E6E1E5;
+        --surface-variant: #49454F;
+        --on-surface-variant: #CAC4D0;
+        --outline: #938F99;
+        --outline-variant: #49454F;
+        --inverse-surface: #E6E1E5;
+        --inverse-on-surface: #313033;
+        --surface-container-low: #1D1B20;
+        --surface-container: #211F26;
+        --surface-container-high: #2B2930;
+      }
+
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

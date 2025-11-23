@@ -1,0 +1,5 @@
+{
+  "name": "Material Dither",
+  "description": "A Material Design 3 inspired dithering studio with dynamic color extraction.",
+  "requestFramePermissions": []
+}
